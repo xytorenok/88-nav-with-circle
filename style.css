@@ -4,13 +4,14 @@
 
 body {
   height: 100vh;
-  background-color: bisque;
+  background-color: #e1c4ff;
   overflow-y: clip;
   position: relative;
 }
 
 .user-panel{
-  margin-left: 150px;
+  margin-left: 120px;
+  z-index: 55;
 }
 
 .menu-line{
@@ -28,7 +29,7 @@ body {
   height: 300px;
   border-radius: 50%;
   border: 2px solid black;
-  background-color: bisque;
+  background-color: #9066bd;
   position: absolute;
   top: 50%;
   left: -70px;
@@ -43,7 +44,7 @@ body {
   height: 340px;
   border-radius: 50%;
   border: 2px solid black;
-  background-color: bisque;
+  background-color: #9066bd;
   position: absolute;
   top: 50%;
   left: -70px;
@@ -58,7 +59,7 @@ body {
   height: 380px;
   border-radius: 50%;
   border: 2px solid black;
-  background-color: bisque;
+  background-color: #9066bd;
   position: absolute;
   top: 50%;
   left: -70px;
@@ -103,7 +104,17 @@ body {
   left: 5px;
 }
 
-
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.1;
+}
 
 @keyframes circleRotate-1 {
   0%{
