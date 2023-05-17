@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: bisque;
+  overflow-y: clip;
+  position: relative;
+}
+
+.user-panel{
+  margin-left: 150px;
+}
+
+.menu-line{
+  position: absolute;
+  left: 115px;
+  width: 2.3px;
+  height: 100%;
+  background: #000;
+  filter: drop-shadow(3px 0px 8px #000);
+  z-index: 1;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: bisque;
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  filter: drop-shadow(0px 0px 4px #000);
+  transform: translate(-50%, -50%) rotate(0deg);
+  z-index: 5;
+  animation: circleRotate-1 10000ms linear infinite;
+}
+
+.circle-2 {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: bisque;
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  filter: drop-shadow(0px 0px 4px #000);
+  transform: translate(-50%, -50%) rotate(0deg);
+  z-index: 4;
+  animation: circleRotate-2 15000ms linear infinite;
+}
+
+.circle-3 {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: bisque;
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  filter: drop-shadow(0px 0px 4px #000);
+  transform: translate(-50%, -50%) rotate(0deg);
+  z-index: 3;
+  animation: circleRotate-3 20000ms linear infinite;
+}
+
+.number {
+  text-align: center;
+}
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+.line-top {
+  transform: translateX(-50%) rotate(90deg);
+  top: 8px;
+  left: 50%;
+}
+
+.line-right {
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5px;
+}
+
+.line-bottom {
+  transform: translateX(-50%) rotate(90deg);
+  bottom: 8px;
+  left: 50%;
+}
+
+.line-left {
+  transform: translateY(-50%);
+  top: 50%;
+  left: 5px;
+}
+
+
+
+@keyframes circleRotate-1 {
+  0%{
+    transform: translate(-50%,-50%) rotate(100deg);
+  }
+
+  100%{
+    transform: translate(-50%,-50%) rotate(460deg);
+  }
+}
+
+@keyframes circleRotate-2 {
+  0%{
+    transform: translate(-50%,-50%) rotate(100deg);
+  }
+
+  100%{
+    transform: translate(-50%,-50%) rotate(460deg);
+  }
+}
+
+@keyframes circleRotate-3 {
+  0%{
+    transform: translate(-50%,-50%) rotate(100deg);
+  }
+
+  100%{
+    transform: translate(-50%,-50%) rotate(460deg);
+  }
+}
