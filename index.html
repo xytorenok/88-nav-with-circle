@@ -8,7 +8,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
-  <script src="canvas.js" defer></script>
+  <script src="dat.gui.min.js" defer></script>
+  <script src="gsap.min.js" defer></script>
+  <script src="canvas6.js" defer></script>
+
 </head>
 
 <body>
@@ -35,6 +38,8 @@
     <div class="line line-left"></div>
   </div>
 
+  <div class="navigation" id="particles-js"></div>
+
   <div class="user-panel">
     <div class="range-1">
       <p>Цвет и время оборота 1 круга</p>
@@ -55,7 +60,7 @@
       <output for="myRange3" id="rangeValue3">15000</output>
     </div>
   </div>
-  <canvas id='c'></canvas>
+  <canvas id='canvas'></canvas>
 </body>
 
 </html>
